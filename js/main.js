@@ -7,12 +7,7 @@ for(const questionsButton of questionsButtons) {
         let listElement = svg.parentElement.parentElement.parentElement;
         let divParagraphs = listElement.querySelector('.bottom-section-div-paragraphs');
 
-        if(divParagraphs.classList.contains('bottom-section-div-paragraph-show')){
-            svg.classList.remove('svg-icon-x');
-            divParagraphs.classList.remove('bottom-section-div-paragraph-show');
-        } else {
-            svg.classList.add('svg-icon-x');
-            divParagraphs.classList.add('bottom-section-div-paragraph-show');
-        }
+        svg.classList.toggle('svg-icon-x');
+        divParagraphs.classList.toggle('bottom-section-div-paragraph-show');
     })
 }
